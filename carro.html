@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
+    <link rel="stylesheet" href="jich.css">
+</head>
+<body>
+<script>
+function rendercart(){
+const cartContainer= document.getElementById('cart');
+const cart= JSON.parse(localStorage.getItem('cart')) || [];
+cartContainer.innerHTML='';
+
+if(cart.length===0){
+    cartContainer.innerHTML='<br><br> <h2 class="centt"> el carrito esta vacio </h2>';
+    return;
+}
+
+}
+
+</script>
+</body>
+</html>
